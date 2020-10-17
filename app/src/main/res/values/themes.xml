@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Flood" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/flood_blue</item>
+        <item name="colorPrimaryVariant">@color/flood_blue_dark</item>
+        <item name="colorSecondary">@color/flood_deep_blue</item>
+        <item name="colorSecondaryVariant">@color/flood_deeper_blue</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="appBarLayoutStyle">@style/Widget.Flood.AppBarLayout</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/flood_white</item>
+        <item name="android:colorBackground">@color/flood_gray</item>
+        <item name="colorSurface">@color/flood_white</item>
+        <item name="fontFamily">@font/dmsans</item>
+        <item name="textInputStyle">@style/Widget.Flood.TextInputLayout</item>
+        <item name="android:textColorSecondary">@color/flood_gray_blue</item>
+        <item name="android:textColorPrimary">@color/flood_deep_blue</item>
+        <item name="materialCardViewStyle">@style/Widget.Flood.CardView</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="flood_gray">#F4F5F7</color>
+    <color name="flood_deep_gray">#C1C7D0</color>
+    <color name="flood_gray_blue">#808A9E</color>
+    <color name="flood_blue">#0052CC</color>
+    <color name="flood_blue_dark">#024BB8</color>
+    <color name="flood_deep_blue">#172B4D</color>
+    <color name="flood_deeper_blue">#0D182B</color>
+    <color name="flood_orange">#DE350B</color>
+    <color name="flood_green">#00875A</color>
+    <color name="flood_white">#fff</color>
+</resources>
+
+
+

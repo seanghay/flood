@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Widget.Flood.AppBarLayout" parent="Widget.MaterialComponents.AppBarLayout.Surface">
+        <item name="android:stateListAnimator" tools:ignore="NewApi">@animator/flood_app_bar_animator</item>
+    </style>
+
+    <style name="Widget.Flood.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Flood.TextInputLayout</item>
+        <item name="boxBackgroundColor">?android:attr/windowBackground</item>
+        <item name="android:textColorHint">?android:attr/textColorSecondary</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.Flood.TextInputLayout" parent="">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.Flood.Story" parent="">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Flood.Story.Profile" parent="">
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="Widget.Flood.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">16dp</item>
+    </style>
+
+
+
+</resources>
