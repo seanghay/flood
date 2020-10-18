@@ -1,4 +1,4 @@
-<img width=100 src=https://raw.githubusercontent.com/seanghay/flood/master/app/src/main/ic_launcher-playstore.png>
+<img width=150 src=https://raw.githubusercontent.com/seanghay/flood/master/app/src/main/ic_launcher-playstore.png>
 
 # Flood
 
