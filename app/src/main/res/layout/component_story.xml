@@ -23,8 +23,10 @@
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageViewProfile"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent=".44"
         app:layout_constraintBottom_toBottomOf="@id/imageViewThumbnail"
         app:layout_constraintEnd_toEndOf="@id/imageViewThumbnail"
         app:layout_constraintStart_toStartOf="@id/imageViewThumbnail"
