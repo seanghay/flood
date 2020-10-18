@@ -12,13 +12,28 @@
         <item name="colorSurface">@color/flood_white</item>
         <item name="fontFamily">@font/dmsans</item>
         <item name="textInputStyle">@style/Widget.Flood.TextInputLayout</item>
-        <item name="android:textColorSecondary">@color/flood_gray_blue</item>
+        <item name="android:textColorSecondary">@color/flood_deep_gray</item>
         <item name="android:textColorPrimary">@color/flood_deep_blue</item>
         <item name="materialCardViewStyle">@style/Widget.Flood.CardView</item>
         <item name="materialButtonStyle">@style/Widget.Flood.Button</item>
         <item name="textAppearanceButton">@style/TextAppearance.Flood.Button</item>
+        <item name="colorError">@color/flood_orange</item>
+        <item name="colorControlNormal">@color/flood_gray_blue</item>
+        <item name="floatingActionButtonStyle">@style/Widget.Flood.FloatingActionButton</item>
+        <item name="bottomNavigationStyle">@style/Widget.Flood.BottomNavigationView</item>
     </style>
 
+    <style name="Theme.Flood.Launch">
+        <item name="android:windowBackground">@drawable/launch</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">?attr/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="ThemeOverlay.Flood.ProgressBar" parent="">
+        <item name="colorSecondary">@color/flood_green</item>
+    </style>
 
     <style name="ThemeOverlay.Flood.Green" parent="">
         <item name="colorPrimary">@color/flood_green</item>
@@ -27,7 +42,6 @@
     <style name="ThemeOverlay.Flood.Orange" parent="">
         <item name="colorPrimary">@color/flood_orange</item>
     </style>
-
 
 
 </resources>

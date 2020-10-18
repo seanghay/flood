@@ -5,4 +5,7 @@
     <string name="photo">Photo</string>
     <string name="video">Video</string>
     <string name="tag_a_friend">Tag a Friend</string>
+    <string name="share">Share</string>
+    <string name="likes_count">%1$s Likes</string>
+    <string name="comments_count">%1$s Comments</string>
 </resources>

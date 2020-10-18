@@ -7,6 +7,7 @@ import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.bumptech.glide.Glide
 import com.seanghay.flood.R
+import com.seanghay.flood.common.load
 import com.seanghay.flood.databinding.ComponentStoryBinding
 
 @EpoxyModelClass(layout = R.layout.component_story)
@@ -27,18 +28,19 @@ abstract class StoryModel : EpoxyModelWithHolder<StoryModel.StoryViewHolder>() {
     override fun bind(holder: StoryViewHolder) {
         holder.binding.apply {
             textView.text = title
+            textView.isSelected = true
             Glide.with(root)
                 .load(profileRes ?: profileUrl)
                 .fitCenter()
                 .centerCrop()
                 .into(imageViewProfile)
 
-            Glide.with(root)
-                .load(thumbnailUrl)
-                .fitCenter()
-                .centerCrop()
-                .into(imageViewThumbnail)
+            imageViewThumbnail.load(thumbnailUrl)
         }
+    }
+
+    override fun unbind(holder: StoryViewHolder) {
+        holder.binding.textView.isSelected = false
     }
 
 

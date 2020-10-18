@@ -23,11 +23,11 @@
 
 
     <style name="ShapeAppearanceOverlay.Flood.Story" parent="">
-        <item name="cornerSize">16dp</item>
+        <item name="cornerSize">12dp</item>
     </style>
 
     <style name="ShapeAppearanceOverlay.Flood.Story.Profile" parent="">
-        <item name="cornerSize">12dp</item>
+        <item name="cornerSize">10dp</item>
     </style>
 
     <style name="Widget.Flood.CardView" parent="Widget.MaterialComponents.CardView">
@@ -39,13 +39,31 @@
     <style name="Widget.Flood.Button" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="cornerRadius">30dp</item>
         <item name="backgroundTint">@color/flood_button_color_selector</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="fontFamily">@font/dmsans_bold</item>
+        <item name="android:textSize">12sp</item>
     </style>
+
 
 
     <style name="TextAppearance.Flood.Button" parent="TextAppearance.MaterialComponents.Button">
         <item name="android:textAllCaps">false</item>
         <item name="android:letterSpacing" tools:ignore="NewApi">0</item>
     </style>
+
+    <style name="Widget.Flood.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/flood_fab_color_selector</item>
+        <item name="tint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.Flood.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/flood_bottom_nav_icon_selector</item>
+
+    </style>
+
 
 
 </resources>

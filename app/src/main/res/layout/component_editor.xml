@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="20dp">
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,19 +15,24 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageViewProfile"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="24dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Flood.Story.Profile"
             tools:src="@tools:sample/avatars" />
+
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:includeFontPadding="false"
             android:text="@string/text_info"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@id/imageViewProfile"
             app:layout_constraintStart_toEndOf="@id/imageViewProfile"
             app:layout_constraintTop_toTopOf="@id/imageViewProfile" />
@@ -41,7 +49,7 @@
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="24dp"
             android:background="@color/flood_gray"
             app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +66,8 @@
             android:layout_marginBottom="20dp"
             android:text="@string/photo"
             android:theme="@style/ThemeOverlay.Flood.Green"
-            app:icon="@drawable/ic_search"
+            app:icon="@drawable/ic_photo_camera"
+            app:iconPadding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/buttonVideo"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +83,8 @@
             android:layout_marginBottom="20dp"
             android:text="@string/video"
             android:theme="@style/ThemeOverlay.Flood.Orange"
-            app:icon="@drawable/ic_search"
+            app:icon="@drawable/ic_video_camera"
+            app:iconPadding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/buttonTagFriend"
             app:layout_constraintStart_toEndOf="@id/buttonPhoto"
@@ -88,7 +98,8 @@
             android:layout_marginEnd="14dp"
             android:layout_marginBottom="20dp"
             android:text="@string/tag_a_friend"
-            app:icon="@drawable/ic_search"
+            app:icon="@drawable/ic_friends"
+            app:iconPadding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/buttonVideo"

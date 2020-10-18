@@ -3,13 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="120dp"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:stateListAnimator="@animator/flood_story_animator"
+    tools:targetApi="lollipop">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageViewThumbnail"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="8:10"
+        app:layout_constraintDimensionRatio="9:12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -17,25 +21,34 @@
         tools:scaleType="centerCrop"
         tools:src="@tools:sample/avatars" />
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageViewProfile"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="@id/imageViewThumbnail"
         app:layout_constraintEnd_toEndOf="@id/imageViewThumbnail"
         app:layout_constraintStart_toStartOf="@id/imageViewThumbnail"
         app:layout_constraintTop_toBottomOf="@id/imageViewThumbnail"
-        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Flood.Story.Profile"
+        app:riv_border_color="?attr/colorSurface"
+        app:riv_border_width="3dp"
+        app:riv_corner_radius="8dp"
         tools:src="@tools:sample/avatars" />
+
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:textAlignment="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="12sp"
+        app:fontFamily="@font/dmsans_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
