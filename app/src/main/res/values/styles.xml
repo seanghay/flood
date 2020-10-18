@@ -2,13 +2,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="Widget.Flood.AppBarLayout" parent="Widget.MaterialComponents.AppBarLayout.Surface">
-        <item name="android:stateListAnimator" tools:ignore="NewApi">@animator/flood_app_bar_animator</item>
+        <item name="android:stateListAnimator" tools:ignore="NewApi">
+            @animator/flood_app_bar_animator
+        </item>
     </style>
 
     <style name="Widget.Flood.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
         <item name="boxStrokeWidth">0dp</item>
         <item name="boxStrokeWidthFocused">0dp</item>
-        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Flood.TextInputLayout</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Flood.TextInputLayout
+        </item>
         <item name="boxBackgroundColor">?android:attr/windowBackground</item>
         <item name="android:textColorHint">?android:attr/textColorSecondary</item>
     </style>
@@ -32,6 +35,17 @@
         <item name="cardCornerRadius">16dp</item>
     </style>
 
+
+    <style name="Widget.Flood.Button" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="cornerRadius">30dp</item>
+        <item name="backgroundTint">@color/flood_button_color_selector</item>
+    </style>
+
+
+    <style name="TextAppearance.Flood.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing" tools:ignore="NewApi">0</item>
+    </style>
 
 
 </resources>

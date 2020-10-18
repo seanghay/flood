@@ -25,6 +25,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/search_in_flood"
+                android:imeOptions="actionSearch"
+                android:inputType="textCapSentences"
                 android:padding="0dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -39,5 +41,11 @@
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/component_story" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/main" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
