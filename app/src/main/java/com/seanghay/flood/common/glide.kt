@@ -1,6 +1,7 @@
 package com.seanghay.flood.common
 
 import android.graphics.drawable.ColorDrawable
+import android.util.Log
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
@@ -12,8 +13,8 @@ fun ImageView.load(url: String?) {
     Glide.with(this)
         .load(url)
         .fitCenter()
+        .centerCrop()
         .placeholder(colorDrawable)
         .error(colorDrawable)
-        .centerCrop()
         .into(this)
 }
